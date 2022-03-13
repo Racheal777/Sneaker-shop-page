@@ -55,7 +55,7 @@ class Greet extends React.Component{
                         <li><a href="#">Nike</a></li>
                         <li><a href="#">Addidas</a></li>
                         <li><a href="#">Balianciaga</a></li>
-                        <li><a href="#">Oasics</a></li>
+                        <li><a href="#">Puma</a></li>
                         {/* <li><a href="#"></a></li> */}
                         
                   </ul>
@@ -67,7 +67,7 @@ class Greet extends React.Component{
 
             <div className="Card">
               <div className="Card-item">
-                <img src="images/pic3.jpg" />
+                <img src="images/pic2.jpg" />
                 <h3>Jordan </h3>
                 <p>250Ghc</p>
                 <button>Add to Cart</button>
