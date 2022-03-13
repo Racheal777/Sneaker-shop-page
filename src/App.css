@@ -1,38 +1,380 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Nav{
+  background-color:#f2e1d8;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+ padding: 17px 10px;
+  width: 100%;
+  
+}
+
+.Logo{
+  list-style-type: none;
+}
+.Logo a{
+  color: #fc8e5e;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-family: fantasy;
+  font-weight: bold;
+  font-size: 1.4em;
+  
+  /* font-size: 1.5em; */
+}
+
+.Nav ul{
+  list-style-type: none;
+ 
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+  
+}
+.Nav li{
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 1em;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.Nav ul li a{
+  text-decoration: none;
+  color: black;
+  
+}
+.Nav ul li a:hover{
+  
+  color: #fc8e5e;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.Card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 39px;
+  grid-row-gap: 0px;
+  width: 90%;
+  margin: 4em auto 3em;
+  /* box-shadow: 5px 5px 7px rgb(22, 18, 18),
+                -5px -5px -7px rgb(243, 237, 237); */
+  } 
+
+  .Card-item{
+    text-align: center;
+    border: 1px #646d77;
+    /* border: 0.5px solid #646d77; */
+    
   }
-  to {
-    transform: rotate(360deg);
+  .Card img{
+    border-radius: 5px;
+    width: 100%;
   }
-}
+
+  .Card-item button{
+    color: #FFFFFF;
+   background-color: rgb(219, 104, 58);
+   padding: 8px 14px;
+   /* width: 40%; */
+   border: none;
+   text-decoration: none;
+  /* border-radius: 10px; */
+   cursor: pointer;
+   text-align: center;
+   margin: 10px 10px;
+  }
+
+  .Bg-image{
+    background-image: url('../public/images/img3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .text{
+    background-color: white;
+    width: 37%;
+    padding: 1.4em;
+    position: absolute;
+    top: 34%;
+    left: 2%;
+    /* text-align: center; */
+  }
+
+  .text P{
+    color: #646d77;
+font-size: 20px;
+font-weight: 400;
+line-height: 1.7;
+padding-top: 20px;
+padding-bottom: 20px;
+  }
+  .faint{
+    font-size: 2.5em;
+   
+    color: #646d77;
+    font-weight: bold;
+    margin-bottom: 14px;
+  }
+
+  .text h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    font-family:"Poppins",sans-serif;
+    /* width: 70%; */
+    margin-bottom: 14px;
+    line-height: 1.2;
+    font-size: 70px;
+    font-weight: 900
+  }
+
+  .text button{
+    color: #FFFFFF;
+   background-color: rgb(219, 104, 58);
+   
+   padding: 15px;
+   width: 40%;
+   text-shadow: 1px 1px 20px #000000;
+   border: none;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+   margin: 10px 10px;
+  }
+
+  .list{
+    /* background-color:#f2e1d8; */
+  display: flex;
+  justify-content: center;
+ padding: 17px 10px;
+  width: 100%;
+  }
+
+  .list ul{
+    list-style-type: none;
+ 
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .list ul li{
+    padding: 1px 14px;
+    
+    font-size: 1.2em; 
+  }
+
+  .list ul li a {
+    text-decoration: none;
+    color: #000000;
+    
+  }
+
+  .home-text{
+    text-align: center;
+    margin: 3em auto ;
+  }
+
+  .home-text p{
+   padding: 15px 20px;
+    opacity: 0.5;
+    text-align: center;
+  }
+
+  .main h1{
+    text-align: center;
+    padding: 1em 10px 10px;
+  }
+
+  .Promo-main{
+    display: flex;
+    width: 95%;
+    border-radius: 5px;
+    margin: 1em auto;
+    overflow-y: hidden;
+  }
+
+  .Promo-card{
+    width: 65%;
+    background-color: #fc8e5e;
+    height: 70vh;
+    overflow-y: hidden;
+  }
+
+  .Promo-card button{
+    color: #030303;
+   background-color: rgb(252, 249, 248);
+   
+   padding: 15px;
+   width: 25%;
+   
+   border: none;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+   margin: 20px 10px;
+  }
+  .card-text{
+    padding: 1em;
+    text-align: center;
+   margin: 5em auto;
+   font-size: 1.5em;
+  }
+
+  .image-tag{
+    width: 30%;
+    height: 70vh;
+  }
+
+  .image-tag img{
+   width: 100%;
+   height: 70vh;
+
+  }
+
+
+  .btn{
+    color: black;
+   background-color: white;
+   border: 1px solid rgb(27, 27, 27);
+   padding: 15px;
+   width: 25%;
+   
+   /* border: none; */
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+   /* margin: 20px 10px; */
+   margin: 2em auto;
+   align-items: center;
+  }
+
+  .Picks{
+    text-align: center;
+    
+  }
+
+  /* about page */
+
+  
+  .bg-name{
+    background-image: url('../public/images/img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 80vh;
+  }
+
+  .story{
+    text-align: center;
+    margin: 3.5em auto;
+    padding: 1.2em;
+    /* width: 70%;  */
+  }
+
+  .story h1{
+    font-weight: bold;
+    /* padding: 1em; */
+    font-size: 2.5em;
+  }
+  .story p{
+    color: #646d77;
+font-size: 20px;
+font-weight: 400;
+line-height: 1.7;
+padding-top: 20px;
+padding-bottom: 20px;
+/* width: 70%; */
+text-align: center;
+  }
+
+  .story img{
+    width: 90%;
+    height: 70vh;
+    vertical-align: middle;
+    border-style: none;     
+  }
+
+  .story button{
+    color: #FFFFFF;
+   background-color: rgb(219, 104, 58);
+   
+   padding: 15px;
+   /* width: 40%; */
+   
+   border: none;
+   text-decoration: none;
+  
+   cursor: pointer;
+   text-align: center;
+   margin: 10px 10px;
+  }
+
+  .ptext{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    padding: 1em;
+  }
+  
+
+
+
+  /* footer */
+
+  footer{
+    margin-top: 2em;
+    background-color: #1d2546;
+    color: white;
+    width: 100%;
+   padding: 2em;
+
+  }
+
+  .footer-text{
+    text-align: center;
+    color: #646d77;
+    padding: 2em 10px 5px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  table{
+    padding: 1em;
+    margin: auto;
+    margin-right: 1em;
+    text-align: center;
+  }
+
+  table thead tr{
+    padding: 1em;
+    margin: 5px 16px;
+
+  }
+
+  table th{
+    padding: 2em;
+    font-size: 1.2em;
+    font-weight: bold;
+
+  }
+
+  td{
+    padding: 14px 19px;
+    color: #646d77;
+  }
