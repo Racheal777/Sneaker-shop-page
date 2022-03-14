@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import Navbar  from "../components/navbar";
+
 import '../App.css';
+import "../styles.css"
 
 //class component
-{/* <Navbar/> */}
-
 class Greet extends React.Component{
     constructor(props){
         super(props)
@@ -67,28 +66,28 @@ class Greet extends React.Component{
 
             <div className="Card">
               <div className="Card-item">
-                <img src="images/pic2.jpg" />
+                <img src="images/pic2.jpg" alt="pic"/>
                 <h3>Jordan </h3>
                 <p>250Ghc</p>
                 <button>Add to Cart</button>
               </div>
 
               <div className="Card-item">
-                <img src="images/pic4.jpg" />
+                <img src="images/pic4.jpg" alt="pic"/>
                 <h3>Jordan </h3>
                 <p>250Ghc</p>
                 <button>Add to Cart</button>
               </div>
 
               <div className="Card-item">
-                <img src="images/pic6.jpg" />
+                <img src="images/pic6.jpg" alt="pic"/>
                 <h3>Jordan </h3>
                 <p>250Ghc</p>
                 <button>Add to Cart</button>
               </div>
 
               <div className="Card-item">
-                <img src="images/pic5.jpg" />
+                <img src="images/pic5.jpg" alt="pic" />
                 <h3>Jordan </h3>
                 <p>250Ghc</p>
                 <button>Add to Cart</button>
@@ -97,6 +96,7 @@ class Greet extends React.Component{
 
             <Promo/>
             <TopPick/>
+            {/* <Subscribe/> */}
           </div>
         );
     }   
@@ -151,40 +151,65 @@ class Greet extends React.Component{
 
                 <div className="Card">
               <div className="Card-item">
-                <img src="images/img.jpg" />
+                <img src="images/img.jpg" alt="pic"/>
                 <h3>Jordan </h3>
                 <p>250Ghc</p>
                 <button>Add to Cart</button>
               </div>
 
               <div className="Card-item">
-                <img src="images/can.jpg" />
+                <img src="images/can.jpg" alt="pic"/>
                 <h3>Jordan </h3>
                 <p>250Ghc</p>
                 <button>Add to Cart</button>
               </div>
 
               <div className="Card-item">
-                <img src="images/img5.jpg" />
+                <img src="images/img5.jpg" alt="pic"/>
                 <h3>Jordan </h3>
                 <p>250Ghc</p>
                 <button>Add to Cart</button>
               </div>
 
               <div className="Card-item">
-                <img src="images/new.jpg" />
+                <img src="images/new.jpg" alt="pic"/>
                 <h3>Jordan </h3>
                 <p>250Ghc</p>
+                <div className="icons">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </div>
                 <button>Add to Cart</button>
               </div>
             </div>
 
             <button className="btn" onClick={Change}>DISCOVER MORE</button>
+
+            <div className="Sub">
+          <div className="Subscribe">
+            <div className="sub-text">
+              <h1>GET UPDATE FROM ANYWHERE</h1>
+              <p>earing Void gathering light light his eavening unto dont afraid</p>
+            </div>
+
+            <div className="form">
+            <input type="text" placeholder="Enter your email"/>
+            <button>Subscribe</button>
+            </div>
+            
+          </div>
+        </div>
             </div>
         )
         
     }
 
+    // function Subscribe() {
+    //   return(
+        
+    //   )
+      
+    // }
 
 
 export default Greet

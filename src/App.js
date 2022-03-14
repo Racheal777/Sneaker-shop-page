@@ -9,6 +9,7 @@ import Navbar  from "./components/navbar";
 import Greet from "./components/home";
 import About from "./components/about";
 import Footer from './components/footer';
+import Cart from './components/cart';
 
 function App() {
   return(
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" exact element = {<Greet/>}/>
           <Route path="/about" element = {<About/>}/>
+          <Route path="/cart" element = {<Cart/>}/>
         </Routes>
           
           <Footer/>
