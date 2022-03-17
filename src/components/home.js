@@ -3,14 +3,18 @@ import React, { useState } from "react";
 import '../App.css';
 import "../styles.css"
 
+
+
 //class component
 class Greet extends React.Component{
-    constructor(props){
-        super(props)
+    constructor(){
+        super()
 
         //setting a state
         this.state = {
-            val: "Our Amazing"
+            val: "Our Amazing",
+            light : "blue"
+
         }
     }
 
@@ -18,7 +22,8 @@ class Greet extends React.Component{
         changeValue = () =>{
             this.setState(
                 {
-                    val: "Maame Esi Sneakers "
+                    val: "Maame Esi Sneakers ",
+                    dark: "black"
                 }
             );
         }
@@ -30,7 +35,7 @@ class Greet extends React.Component{
     render(){
         return (
           <div>
-            <div className="Bg-image">
+            <div className="Bg-image" >
               <div className="text">
                 <p className="faint">50% OFF </p>
                 <h1>Sneakers at cost</h1>
@@ -51,7 +56,8 @@ class Greet extends React.Component{
 
               <div className="list">
                   <ul >
-                        <li><a href="#">Nike</a></li>
+                        
+                        <li><a href="#" >Nike</a></li>
                         <li><a href="#">Addidas</a></li>
                         <li><a href="#">Balianciaga</a></li>
                         <li><a href="#">Puma</a></li>
@@ -93,9 +99,10 @@ class Greet extends React.Component{
                 <button>Add to Cart</button>
               </div>
             </div>
-
+            {/* <SelectedShoe/> */}
             <Promo/>
             <TopPick/>
+            
             {/* <Subscribe/> */}
           </div>
         );
@@ -126,7 +133,7 @@ class Greet extends React.Component{
               </div>
 
               <div className="image-tag">
-                <img src="images/pic3.jpg" />
+                <img src="images/pic3.jpg" alt="pic" />
               </div>
             </div>
           </div>
@@ -204,12 +211,9 @@ class Greet extends React.Component{
         
     }
 
-    // function Subscribe() {
-    //   return(
-        
-    //   )
-      
-    // }
+
+    
+    
 
 
 export default Greet

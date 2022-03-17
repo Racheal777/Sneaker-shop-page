@@ -22,11 +22,18 @@ function Navbar() {
           <li>
             <Link to="/about">About</Link>
           </li>
+          
+
           <li>
-            <Link to="/">Service</Link>
+            <Link to="/shoes">Sneakers</Link>
           </li>
+
           <li>
             <Link to="/cart">Cart</Link>
+          </li>
+
+          <li>
+            <Link to="/payment">Payment</Link>
           </li>
         </ul>
 
@@ -38,7 +45,7 @@ function Navbar() {
 
         <div className="Login">
           <li>
-            <Link to="/">Register</Link>
+            <Link to="/signup">Register</Link>
           </li>
         </div>
       </div>
