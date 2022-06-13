@@ -9,6 +9,7 @@ function Cart() {
 
     //setting a usestate to add to the function
     const[number, setNumber] = useState(1)
+    const [cart, setCart]   = useState(null)
     
 
 

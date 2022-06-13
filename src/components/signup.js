@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "../signup.css"
 
-function Signup() {
+
+function Signup(props) {
     const[Firstname, setFirstname] = useState('')
     const[Lastname, setLastname] = useState('')
     const[email, setEmail] = useState('')
@@ -15,6 +16,11 @@ function Signup() {
     const[reebok, setReebok] = useState(false)
     const[Balanciaga, setBalanciaga] = useState(false)
 
+    useEffect(() => {
+        props.show()
+    })
+
+    console.log(props);
 
   return (
     <div>
@@ -45,11 +51,11 @@ function Signup() {
                   
                 <p>Gender</p>
                 <label>male
-                <input type= "radio" value="male" checked= {gender == "male"} onChange = {(e) => setgender(e.target.value)}/>
+                <input type= "radio" value="male" checked= {gender === "male"} onChange = {(e) => setgender(e.target.value)}/>
                 </label>
 
                 <label>female
-                <input type= "radio" value="female" checked= {gender == "female"} onChange = {(e) => setgender(e.target.value)}/>
+                <input type= "radio" value="female" checked= {gender === "female"} onChange = {(e) => setgender(e.target.value)}/>
                 </label>
                 
             </div>
@@ -80,7 +86,7 @@ function Signup() {
                 <input type= "password" value={confirm} onChange = {(e) => setConfirmpasword(e.target.value)}/>
                 </div>
                 
-
+            <button type='submit'>Register</button>
             </form>
         </div>
     </div>

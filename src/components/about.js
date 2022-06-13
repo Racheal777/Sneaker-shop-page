@@ -52,7 +52,7 @@ function About() {
           </p>
         </div>
 
-        <img src="images/can3.jpg" alt="pic" />
+        <img src="images/news.png" alt="pic" />
       </div>
 
       <Child show={details} />

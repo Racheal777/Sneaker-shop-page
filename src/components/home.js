@@ -7,8 +7,8 @@ import "../styles.css"
 
 //class component
 class Greet extends React.Component{
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
 
         //setting a state
         this.state = {
@@ -18,6 +18,10 @@ class Greet extends React.Component{
         }
     }
 
+    // componentDidMount(){
+    //   this.props.show()
+    //   console.log(this.props);
+    // }
         //changing the state
         changeValue = () =>{
             this.setState(
